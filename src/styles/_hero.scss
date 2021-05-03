@@ -1,0 +1,42 @@
+@use 'globals' as *;
+
+.hero {
+  // border: 1px solid red;
+  padding: 0 2em;
+  background: linear-gradient(
+    210.32deg,
+    #000000 -14.45%,
+    rgba(0, 0, 0, 0) 60.77%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  h1 {
+    font-size: clamp(3.5rem, 4vw, 6rem);
+    span {
+      color: $cyan;
+    }
+  }
+  p {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    margin: 3.5rem 0;
+    line-height: 2;
+  }
+  button {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
+    background: none;
+    border: 2px solid $cyan;
+    color: $cyan;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    &:hover {
+      background: $transparent-cyan;
+    }
+  }
+}

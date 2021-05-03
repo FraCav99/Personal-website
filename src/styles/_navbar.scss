@@ -1,11 +1,13 @@
 @use 'globals' as *;
 
 .navbar {
-  // border: 1px solid red;
   padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 5vh;
+  position: fixed;
+  width: 100%;
 
   .backdrop {
     position: absolute;
@@ -122,16 +124,21 @@ body.active {
     .burger {
       display: none;
     }
+    .nav-logo {
+      margin-left: 4em;
+    }
     nav {
+      margin-right: 4em;
       position: static;
       transform: translateX(0);
       background: none;
       min-height: auto;
       font-size: 1rem;
-      max-width: 800px;
+      max-width: 600px;
       .nav-items {
         flex-direction: row;
         min-height: auto;
+        justify-content: space-between;
         .separator {
           transform: rotate(90deg);
           width: 35px;
