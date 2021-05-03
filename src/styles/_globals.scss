@@ -1,0 +1,35 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// Colors
+$body-background: linear-gradient(
+  210.32deg,
+  #000000 -14.45%,
+  rgba(0, 0, 0, 0) 60.77%
+);
+$cyan: #00e4f2;
+$light-dark: #34343d;
+$more-dark: #262629;
+$transparent-cyan: rgba(0, 228, 242, 0.2);
+$card-gray: #292929;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-dark;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
