@@ -22,8 +22,6 @@ $card-gray: #292929;
 body {
   background-color: $light-dark;
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  overflow-x: hidden;
 }
 
 li {
@@ -32,4 +30,11 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
