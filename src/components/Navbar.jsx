@@ -1,28 +1,23 @@
-import Smerald from '../images/smerald.svg';
+import { useState } from 'react';
+import Emerald from '../images/emerald.svg';
 
 const Navbar = () => {
+  const [burgerMenu, setBurgerMenu] = useState(false);
+
   const toggleMenu = () => {
-    const sideMenu = document.querySelector('nav');
-    const backdrop = document.querySelector('.backdrop');
-    const line_1 = document.querySelector('.line:first-child');
-    const line_2 = document.querySelector('.line:nth-child(2)');
-    const line_3 = document.querySelector('.line:last-child');
-
-    sideMenu.classList.toggle('slide');
-    backdrop.classList.toggle('show');
-
-    line_1.classList.toggle('active');
-    line_2.classList.toggle('active');
-    line_3.classList.toggle('active');
+    setBurgerMenu(previous => !previous);
 
     document.body.classList.toggle('active');
   };
 
   return (
     <div className="navbar">
-      <div className="backdrop" onClick={toggleMenu}></div>
-      <img src={Smerald} alt="Smerald logo" className="nav-logo" />
-      <nav>
+      <div
+        className={'backdrop' + (burgerMenu ? ' show' : '')}
+        onClick={toggleMenu}
+      ></div>
+      <img src={Emerald} alt="Smerald logo" className="nav-logo" />
+      <nav className={burgerMenu ? 'slide' : null}>
         <ul className="nav-items">
           <li className="nav-item">
             <a href="">About me</a>
@@ -40,9 +35,12 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="burger" onClick={toggleMenu}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+        {[1, 2, 3].map(el => (
+          <div
+            className={'line' + (burgerMenu ? ' active' : '')}
+            key={el}
+          ></div>
+        ))}
       </div>
     </div>
   );

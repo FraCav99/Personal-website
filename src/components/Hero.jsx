@@ -5,8 +5,8 @@ const Hero = () => {
         Hello, I'm <span>Francesco</span>!
       </h1>
       <p>
-        A junior web developer, based in Italy. I like to reflect my ideas on
-        the web!
+        Junior web developer, based in Italy. I like to reflect my ideas on the
+        web!
       </p>
       <button>Get in touch!</button>
     </div>
