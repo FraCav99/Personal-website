@@ -16,7 +16,9 @@ const Navbar = () => {
         className={'backdrop' + (burgerMenu ? ' show' : '')}
         onClick={toggleMenu}
       ></div>
-      <img src={Emerald} alt="Smerald logo" className="nav-logo" />
+      <div className="nav-logo">
+        <Emerald />
+      </div>
       <nav className={burgerMenu ? 'slide' : null}>
         <ul className="nav-items">
           <li className="nav-item">

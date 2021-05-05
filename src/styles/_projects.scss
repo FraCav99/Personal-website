@@ -1,0 +1,130 @@
+@use 'globals' as *;
+
+.projects {
+  min-height: 100vh;
+  margin: 4em auto;
+  width: 90%;
+  max-width: 1135px;
+  color: white;
+
+  h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid cyan;
+      height: 2px;
+      bottom: -5px;
+      width: 100%;
+      background: cyan;
+    }
+  }
+
+  .github-link {
+    border: 1px solid cyan;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+    font-weight: 500;
+    display: block;
+    width: 85%;
+    max-width: 535px;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    text-align: center;
+    margin: 5em auto 0 auto;
+    span {
+      margin-left: 5px;
+      color: $cyan;
+      svg {
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .link-out {
+        path {
+          stroke: $cyan;
+        }
+      }
+    }
+    &:hover {
+      background: $transparent-cyan;
+    }
+  }
+
+  .projects-wrapper {
+    margin-top: 1em;
+    .project {
+      border-radius: 5px;
+      width: 90%;
+      max-width: 1030px;
+      margin: 0 auto;
+      &:nth-child(2) {
+        margin: 2em auto;
+      }
+      .image-container {
+        img {
+          width: 100%;
+          object-fit: contain;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          display: block;
+        }
+      }
+      .info-container {
+        background: $card-gray;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 2em;
+        .main-info {
+          margin-bottom: 2em;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          h3 {
+            padding-top: -1rem;
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -1rem;
+            padding-top: 1rem;
+            .tag {
+              background: $transparent-cyan;
+              color: $cyan;
+              border-radius: 5px;
+              margin-right: 1em;
+              margin-top: 1rem;
+              padding: 0.625rem;
+            }
+          }
+        }
+        .links-container {
+          margin-top: 2em;
+          width: 100px;
+          display: flex;
+          justify-content: space-between;
+          .github-alt {
+            &:hover {
+              path {
+                fill: $cyan;
+              }
+            }
+          }
+          .link-out {
+            &:hover {
+              path {
+                stroke: $cyan;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

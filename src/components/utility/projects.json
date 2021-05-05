@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Todo App",
+    "description": "A classic todo app to keep track of your tasks, supports multiple lists.",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "githubRepoUrl": "https://github.com/FraCav99/To-P-Do",
+    "liveSiteUrl": "https://fracav99.github.io/To-P-Do/",
+    "image": "todo.png"
+  },
+  {
+    "id": 2,
+    "title": "Weather App",
+    "description": "Web app to check the weather in any city of the world, with a different gif in the background based on the climate.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Nodejs",
+      "OpenWeatherAPI",
+      "GiphyAPI"
+    ],
+    "githubRepoUrl": "https://github.com/FraCav99/TOP-Weather-app",
+    "liveSiteUrl": "https://stark-chamber-23483.herokuapp.com/",
+    "image": "weather-app.png"
+  },
+  {
+    "id": 3,
+    "title": "Fake E-commerce",
+    "description": "Responsive E-commerce website made with React, communicates with an external API to simulate a real store.",
+    "tags": ["SCSS", "React", "FakestoreAPI"],
+    "githubRepoUrl": "https://github.com/FraCav99/shopping-cart",
+    "liveSiteUrl": "https://fracav99.github.io/shopping-cart/#/",
+    "image": "e-shop.png"
+  }
+]
