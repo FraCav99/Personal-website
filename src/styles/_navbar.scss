@@ -99,6 +99,9 @@ nav.slide {
 
 .backdrop.show {
   display: block;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
 }
 
 .line:first-child.active {
@@ -119,9 +122,17 @@ body.active {
   overflow-y: hidden;
 }
 
+.navbar.active {
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(8, 8, 8, 0.7);
+}
+
 // media queries
 @media screen and (min-width: 780px) {
   .navbar {
+    .backdrop {
+      display: none;
+    }
     .burger {
       display: none;
     }

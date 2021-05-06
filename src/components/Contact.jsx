@@ -3,7 +3,7 @@ import GithubIcon from '../images/github.svg';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-wrapper">
         <h2 className="headings">Get in touch</h2>
         <p>
@@ -15,10 +15,13 @@ const Contact = () => {
           Send me a message
         </a>
         <div className="social-container">
-          <a href="" className="icon">
+          <a
+            href="https://www.linkedin.com/in/francescocavallo99/"
+            className="icon"
+          >
             <LinkedinIcon />
           </a>
-          <a href="" className="icon">
+          <a href="https://github.com/FraCav99" className="icon">
             <GithubIcon />
           </a>
         </div>

@@ -2,7 +2,7 @@ import Me from '../images/me.jpeg';
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-wrapper">
         <div className="circle">
           <img src={Me} alt="Me" />
