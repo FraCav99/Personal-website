@@ -8,7 +8,9 @@ const Hero = () => {
         Junior web developer, based in Italy. I like to reflect my ideas on the
         web!
       </p>
-      <button>Get in touch!</button>
+      <a href="mailto:Francesco.cav99@outlook.it" className="link-btn">
+        Get in touch!
+      </a>
     </div>
   );
 };

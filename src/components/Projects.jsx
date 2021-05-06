@@ -5,7 +5,7 @@ import LinkOut from '../images/link-out.svg';
 const Projects = () => {
   return (
     <div className="projects">
-      <h2>Projects</h2>
+      <h2 className="headings">Projects</h2>
       <div className="projects-wrapper">
         {projects.map(project => (
           <Project
@@ -19,7 +19,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <a href="https://github.com/FraCav99" className="github-link">
+      <a href="https://github.com/FraCav99" className="github-link link-btn">
         Other projects available on my
         <span>
           Github <LinkOut className="link-out" />

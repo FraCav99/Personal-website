@@ -8,7 +8,7 @@ const About = () => {
           <img src={Me} alt="Me" />
         </div>
         <div className="paragraph">
-          <h2>About me</h2>
+          <h2 className="headings">About me</h2>
           <p>
             I started coding in high school. That's where I first met the world
             of web development. Since then I completely fell in love with it and

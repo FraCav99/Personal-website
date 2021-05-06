@@ -7,29 +7,9 @@
   max-width: 1135px;
   color: white;
 
-  h2 {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-size: 2rem;
-    &::before {
-      content: '';
-      position: absolute;
-      border: 1px solid cyan;
-      height: 2px;
-      bottom: -5px;
-      width: 100%;
-      background: cyan;
-    }
-  }
-
-  .github-link {
-    border: 1px solid cyan;
+  .link-btn {
     color: white;
-    border-radius: 5px;
     padding: 1em;
-    font-weight: 500;
     display: block;
     width: 85%;
     max-width: 535px;
@@ -48,9 +28,6 @@
           stroke: $cyan;
         }
       }
-    }
-    &:hover {
-      background: $transparent-cyan;
     }
   }
 

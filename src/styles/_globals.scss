@@ -20,7 +20,7 @@ $card-gray: #292929;
 }
 
 body {
-  background-color: $light-dark;
+  background-color: #1c1c21;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -41,4 +41,35 @@ button {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+}
+
+// components
+.link-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: none;
+  border: 2px solid $cyan;
+  color: $cyan;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  &:hover {
+    background: $transparent-cyan;
+  }
+}
+
+.headings {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 3rem;
+  &::before {
+    content: '';
+    position: absolute;
+    border: 1px solid cyan;
+    height: 2px;
+    bottom: -5px;
+    width: 100%;
+    background: cyan;
+  }
 }

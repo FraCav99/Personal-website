@@ -21,24 +21,6 @@
         display: block;
       }
     }
-    .paragraph {
-      h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 2rem;
-        font-weight: 600;
-        font-size: 2rem;
-        &::before {
-          content: '';
-          position: absolute;
-          border: 1px solid cyan;
-          height: 2px;
-          bottom: -5px;
-          width: 100%;
-          background: cyan;
-        }
-      }
-    }
     p {
       line-height: 1.6;
       font-size: clamp(1rem, 1.2vw, 2rem);
