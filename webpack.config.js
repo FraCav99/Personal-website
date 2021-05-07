@@ -37,14 +37,24 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|ico)$/,
+        test: /\.(png|jpe?g|gif|ico|pdf)$/,
         type: 'asset',
+      },
+      {
+        test: /\.pdf$/,
+        type: 'asset',
+        generator: {
+          filename: 'static/[name][ext]',
+        },
       },
       {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
     ],
+  },
+  performance: {
+    hints: false,
   },
   devServer: {
     open: true, // Automatically open the page

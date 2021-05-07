@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Emerald from '../images/emerald.svg';
-// import Pdf from '../../public/cv.pdf';
+import Pdf from '../static/cv.pdf';
 
 const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -34,7 +34,9 @@ const Navbar = () => {
     toggleMenu();
   };
 
-  window.addEventListener('scroll', changeBackground);
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+  }, []);
 
   return (
     <div className={navbar ? 'navbar active' : 'navbar'}>
@@ -63,7 +65,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item separator"></li>
-          <a href="/cv.pdf" target="_blank">
+          <a href={Pdf} target="_blank">
             <li className="nav-item resume-btn">Resume</li>
           </a>
         </ul>

@@ -24,6 +24,7 @@
     width: 50px;
     height: 50px;
     z-index: 99;
+    text-align: center;
   }
   .burger {
     cursor: pointer;
@@ -99,7 +100,7 @@ nav.slide {
 
 .backdrop.show {
   display: block;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
 }
