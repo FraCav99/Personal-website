@@ -67,16 +67,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       favicon: './src/images/favicon.ico',
-      meta: {
-        'og:title': {
-          property: 'og:title',
-          content: 'Francesco Cavallo Portfolio',
-        },
-        'og:image': {
-          property: 'og:image',
-          content: './src/images/thumbnail.png',
-        },
-      },
     }),
   ],
   resolve: {
